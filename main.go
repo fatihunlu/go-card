@@ -1,14 +1,14 @@
 package main
 
-import "fmt"
-
 func main() {
 	cards := newDeck()
-	hand, remainingCards := deal(cards, 3)
+	cards.shuffle()
+	cards.print()
+	//hand, remainingCards := deal(cards, 3)
+	//cards.saveToFile("my_cards")
 
-	hand.print()
-	fmt.Println("------")
-	remainingCards.print()
+	//cards := newDeckFromFile("my_cards")
+	//cards.print()
 
 }
 
