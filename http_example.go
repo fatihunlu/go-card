@@ -9,7 +9,7 @@ import (
 
 type Person struct {
 	Name   string `json:"name"`
-	Height int    `json:"height"`
+	Height string `json:"height"`
 }
 
 func getPersonInfo() {
@@ -21,6 +21,7 @@ func getPersonInfo() {
 	var result Person
 	if err := json.Unmarshal(body, &result); err != nil { // Parse []byte to the go struct pointer
 		fmt.Println("Can not unmarshal JSON")
+		fmt.Println("err: ", err)
 	}
 
 	fmt.Println(result.Name)
