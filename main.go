@@ -10,8 +10,6 @@ func main() {
 	//cards := newDeckFromFile("my_cards")
 	//cards.print()
 
-}
-
-func deal(d deck, handSize int) (deck, deck) {
-	return d[:handSize], d[handSize:]
+	// Http requests
+	getPersonInfo()
 }
