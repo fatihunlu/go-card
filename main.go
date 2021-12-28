@@ -12,4 +12,7 @@ func main() {
 
 	// Http requests
 	getPersonInfo()
+
+	// Status Checker
+	getStatuses()
 }
